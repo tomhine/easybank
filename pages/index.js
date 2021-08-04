@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Easybank | Next Generation Digital Banking</title>
         <meta
@@ -31,6 +31,6 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <Navbar />
-    </div>
+    </>
   );
 }
