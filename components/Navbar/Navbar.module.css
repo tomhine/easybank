@@ -6,11 +6,13 @@
   background-color: white;
   padding: 0 6%;
   font-size: 1.4rem;
+  position: relative;
+  z-index: 20;
 }
 
 .navLinkContainer {
   display: flex;
-  gap: 3rem;
+  gap: 1.6rem;
   list-style: none;
   padding: 0 1rem;
   margin: 0;
@@ -23,4 +25,10 @@
 
 .menuIcon:hover {
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .navLinkContainer {
+    gap: 3rem;
+  }
 }
