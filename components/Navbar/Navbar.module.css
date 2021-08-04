@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.4rem;
+  background-color: white;
+  padding: 0 6%;
+  font-size: 1.4rem;
+}
+
+.navLinkContainer {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.menuIcon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.menuIcon:hover {
+  cursor: pointer;
+}

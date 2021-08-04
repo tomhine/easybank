@@ -1,0 +1,16 @@
+.btn {
+  color: white;
+  background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+  width: 16.3rem;
+  height: 4.4rem;
+  border: none;
+  border-radius: 2.3rem;
+  font-size: 1.4rem;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}

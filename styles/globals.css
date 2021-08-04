@@ -1,9 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+:root {
+  --main-bg: hsl(0, 0%, 98%);
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --gradient: linear-gradient(
+    to right,
+    var(var(--lime-green), var(var(--bright-cyan)))
+  );
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Public Sans", sans-serif;
+  font-size: 10px;
+  background-color: var(--main-bg);
 }
 
 a {
