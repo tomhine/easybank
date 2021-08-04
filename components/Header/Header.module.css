@@ -3,19 +3,125 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  z-index: 5;
 }
 
 .images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
+  width: 100vw;
+  height: 400px;
+  z-index: 3;
+}
+
+.bgImage {
+  position: absolute;
+  background-image: url("../../public/images/bg-intro-mobile.svg");
+  background-position-y: -65px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 290px;
+  width: 100%;
+  top: 0;
+  right: 0;
 }
 
 .mockup {
-  top: 0;
+  background-image: url("../../public/images/image-mockups.png");
+  width: 90%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 5;
+  top: -120px;
+}
+
+.textContainer {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 3rem;
 }
 
 .headerContainer h1 {
   font-weight: 300;
   color: var(--dark-text);
   font-size: 3.6rem;
-  margin: 0;
+  margin: -80px 0 0 0;
+}
+
+@media (min-width: 425px) {
+  .images {
+    height: 450px;
+  }
+
+  .bgImage {
+    background-image: url("../../public/images/bg-intro-desktop.svg");
+  }
+
+  .mockup {
+    top: -135px;
+  }
+}
+
+@media (min-width: 768px) {
+  .headerContainer {
+    flex-direction: row-reverse;
+  }
+
+  .bgImage {
+    height: 480px;
+    width: 400px;
+    right: 60px;
+    top: -50px;
+  }
+
+  .mockup {
+    top: -60px;
+    width: 100%;
+  }
+
+  .textContainer {
+    align-items: flex-start;
+    text-align: left;
+    margin: 2rem 0 0 5rem;
+    width: 55vw;
+  }
+
+  .textContainer p {
+    width: 90%;
+  }
+
+  @media (min-width: 1024px) {
+    .bgImage {
+      width: 60vw;
+      /* right: -100px; */
+    }
+
+    .mockup {
+      top: -100px;
+      height: 900px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .bgImage {
+      width: 700px;
+      height: 800px;
+    }
+
+    .mockup {
+      top: -100px;
+      height: 900px;
+    }
+
+    .textContainer {
+      margin: 7rem 0 0 12rem;
+      width: 39vw;
+    }
+  }
 }
