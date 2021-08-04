@@ -5,10 +5,8 @@
   --dark-blue: hsl(233, 26%, 24%);
   --lime-green: hsl(136, 65%, 51%);
   --bright-cyan: hsl(192, 70%, 51%);
-  --gradient: linear-gradient(
-    to right,
-    var(var(--lime-green), var(var(--bright-cyan)))
-  );
+  --dark-text: hsl(233, 26%, 24%);
+  --light-text: hsl(233, 8%, 62%);
 }
 
 html,
@@ -27,4 +25,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+p {
+  color: var(--light-text);
+  font-size: 1.4rem;
 }
