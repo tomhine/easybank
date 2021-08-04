@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <Image src={Logo} alt="Main logo" />
-      {windowWidth < 800 ? (
+      {windowWidth < 768 ? (
         <Image src={MenuIcon} alt="menu icon" className={styles.menuIcon} />
       ) : (
         <>
