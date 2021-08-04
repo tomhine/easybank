@@ -1,0 +1,21 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.images {
+  position: relative;
+}
+
+.mockup {
+  top: 0;
+}
+
+.headerContainer h1 {
+  font-weight: 300;
+  color: var(--dark-text);
+  font-size: 3.6rem;
+  margin: 0;
+}
