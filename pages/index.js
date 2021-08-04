@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import Header from "../components/Header/Header";
+import InfoSection from "../components/InfoSection/InfoSection";
 import Navbar from "../components/Navbar/Navbar";
 
 export default function Home() {
@@ -33,6 +33,9 @@ export default function Home() {
       </Head>
       <Navbar />
       <Header />
+      <main>
+        <InfoSection />
+      </main>
     </>
   );
 }
