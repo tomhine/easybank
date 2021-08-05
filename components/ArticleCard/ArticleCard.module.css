@@ -1,7 +1,7 @@
 .articleCard {
   border-radius: 0.5rem;
   background-color: white;
-  width: 32.7rem;
+  width: 31.7rem;
 }
 
 .imageContainer .image {
@@ -10,7 +10,7 @@
 }
 
 .info {
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 2rem 3rem 5rem 3rem;
 }
 
 .info h4 {
