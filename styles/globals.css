@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
 
 :root {
   --main-bg: hsl(0, 0%, 98%);
@@ -8,6 +8,7 @@
   --bright-cyan: hsl(192, 70%, 51%);
   --dark-text: hsl(233, 26%, 24%);
   --light-text: hsl(233, 8%, 62%);
+  --footer-text-hover: hsl(158, 66%, 48%);
 }
 
 html,
@@ -15,7 +16,7 @@ body {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Public Sans', sans-serif;
   font-size: 10px;
   background-color: var(--main-bg);
 }
