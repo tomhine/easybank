@@ -1,0 +1,30 @@
+.articleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem;
+  margin: -2rem;
+}
+
+.articleList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .articleList {
+    gap: 6rem;
+  }
+
+  .articleContainer h2 {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 1440px) {
+  .articleContainer h2 {
+    margin-left: 2rem;
+  }
+}
