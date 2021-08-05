@@ -1,0 +1,11 @@
+.icon:hover {
+  cursor: pointer;
+}
+
+.gradientIcon:hover {
+  cursor: pointer;
+}
+
+.gradientIcon:hover path {
+  fill: url(#gradient);
+}
