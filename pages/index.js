@@ -1,5 +1,6 @@
 import Head from "next/head";
 import ArticleSection from "../components/ArticleSection/ArticleSection";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import InfoSection from "../components/InfoSection/InfoSection";
 import Navbar from "../components/Navbar/Navbar";
@@ -38,6 +39,7 @@ export default function Home() {
         <InfoSection />
         <ArticleSection />
       </main>
+      <Footer />
     </>
   );
 }
