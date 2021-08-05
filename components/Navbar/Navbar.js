@@ -1,19 +1,28 @@
-import useWindowSize from "../../hooks/useWindowSize";
-import Image from "next/image";
-import Logo from "../../public/images/logo.svg";
-import styles from "./Navbar.module.css";
-import MenuIcon from "../../public/images/icon-hamburger.svg";
-import NavItem from "../NavItem/NavItem";
-import { InviteButton } from "../Elements/Elements";
+import { useState } from 'react';
+import useWindowSize from '../../hooks/useWindowSize';
+import { CloseIcon, Logo, MenuIcon } from '../Icons/Icons';
+import styles from './Navbar.module.css';
+import NavItem from '../NavItem/NavItem';
+import { InviteButton } from '../Elements/Elements';
 
 const Navbar = () => {
   const windowWidth = useWindowSize().width;
 
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  const mobileNavToggleHandler = () => {
+    setMobileNavOpen(!mobileNavOpen);
+  };
+
   return (
     <nav className={styles.navbar}>
-      <Image src={Logo} alt="Main logo" />
+      <Logo />
       {windowWidth < 768 ? (
-        <Image src={MenuIcon} alt="menu icon" className={styles.menuIcon} />
+        mobileNavOpen ? (
+          <CloseIcon onClick={mobileNavToggleHandler} />
+        ) : (
+          <MenuIcon onClick={mobileNavToggleHandler} />
+        )
       ) : (
         <>
           <ul className={styles.navLinkContainer}>
