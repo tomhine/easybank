@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8rem;
-  margin: -2rem;
+  padding: 8rem 3rem;
+  margin-top: -2rem;
+}
+
+.articleContainer h2 {
+  width: 100%;
 }
 
 .articleList {
