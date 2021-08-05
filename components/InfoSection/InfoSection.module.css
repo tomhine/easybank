@@ -3,14 +3,14 @@
   flex-direction: column;
   align-items: center;
   margin-top: 8rem;
-  padding: 6rem 3rem;
+  padding: 6rem 3rem 2rem 3rem;
   background-color: var(--info-bg);
   text-align: center;
 }
 
-.infoContainer h2 {
-  font-size: 3.2rem;
-  font-weight: 300;
-  color: var(--dark-text);
-  margin: 0.6rem;
+.infoList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 4rem;
 }

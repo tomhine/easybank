@@ -1,9 +1,10 @@
 .infoItem {
-  margin: 4rem 0;
+  max-width: 30rem;
 }
 
-.infoItem h3 {
-  color: var(--dark-text);
-  font-size: 2rem;
-  font-weight: 300;
+@media (min-width: 768px) {
+  .infoItem {
+    max-width: 28rem;
+    align-items: flex-start;
+  }
 }
