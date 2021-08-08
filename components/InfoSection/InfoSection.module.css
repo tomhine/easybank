@@ -8,9 +8,42 @@
   text-align: center;
 }
 
+.infoContainer > p {
+  max-width: 70%;
+}
+
 .infoList {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   margin-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .infoContainer {
+    padding: 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .infoContainer {
+    align-items: flex-start;
+    text-align: start;
+    padding: 6rem 12rem;
+  }
+
+  .infoContainer p {
+    max-width: 70%;
+  }
+
+  .infoList {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .infoList {
+    gap: 3rem 1rem;
+    align-items: flex-start;
+  }
 }
