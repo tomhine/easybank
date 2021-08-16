@@ -2,7 +2,12 @@ import styles from './Icons.module.css';
 
 export const Logo = props => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
+    <svg
+      className={styles.logo}
+      xmlns="http://www.w3.org/2000/svg"
+      width={props.width || '139'}
+      height={props.height || '20'}
+    >
       <defs>
         <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
           <stop offset="0%" stopColor="#33D35E" />

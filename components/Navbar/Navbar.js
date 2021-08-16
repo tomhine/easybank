@@ -14,9 +14,14 @@ const Navbar = () => {
     setMobileNavOpen(!mobileNavOpen);
   };
 
+  const logoWidth =
+    windowWidth < 768 ? '139' : windowWidth < 1024 ? '174' : '209';
+  const logoHeight =
+    windowWidth < 768 ? '20' : windowWidth < 1024 ? '25' : '30';
+
   return (
     <nav className={styles.navbar}>
-      <Logo />
+      <Logo width={logoWidth} height={logoHeight} />
       {windowWidth < 768 ? (
         mobileNavOpen ? (
           <CloseIcon onClick={mobileNavToggleHandler} />
