@@ -1,12 +1,19 @@
-import { InviteButton } from "../Elements/Elements";
-import styles from "./Header.module.css";
+import { InviteButton } from '../Elements/Elements';
+import styles from './Header.module.css';
+import mockupImg from '../../public/images/image-mockups.png';
+import Image from 'next/image';
 
 const Header = () => {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.images}>
-        <div className={styles.bgImage}></div>
-        <div className={styles.mockup}></div>
+        <div className={styles.bgImage}>
+          <Image
+            className={styles.mockup}
+            src={mockupImg}
+            alt="easybank mockup on smartphones"
+          />
+        </div>
       </div>
       <div className={styles.textContainer}>
         <h1>Next generation digital banking</h1>
